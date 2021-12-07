@@ -1,0 +1,80 @@
+<!Doctype Html>  
+<Html>     
+<Head>      
+<Title>     
+</Title>  
+<link rel="stylesheet" href="re.css">
+</Head>  
+<Body background="z.PNG"> 
+<div class="q">
+
+</div>
+<div class="top">
+<h1>Pricing plan</h1>
+<p>No credit card required. All plans come with a free, 30-day trial of our Premium features.</p> 
+      <div class="toggle-btn">
+        <span style="margin: 0.8em;">Annually</span>
+        <label class="switch">
+          <input type="checkbox" id="checbox" onclick="check()" ; />
+          <span class="slider round"></span>
+        </label>
+        <span style="margin: 0.8em;">Monthly</span></div>
+    </div>
+<div class="package-container">
+      <div class="packages">
+        <h1>Free</h1>
+        <h2 class="text1">$0</h2>
+        <h2 class="text2">$0</h2>
+        <ul class="list">
+          <li class="first">Unlimited time tracking</li>
+          <li>Unlimited projects, clients, and tags</li>
+          <li>Exportable reports</li>
+          <li>Automated time tracking triggers</li>
+        </ul>
+        <a href="#" class="button button1">Start Now</a>
+ </div>
+      <div class="packages">
+        <h1>Basic</h1>
+        <h2 class="text1">$18.99</h2>
+        <h2 class="text2">$239.99</h2>
+        <ul class="list">
+          <li class="first">Everything in Free +</li>
+          <li>Everything in Starter +</li>
+          <li>Pop-up Forms</li>
+          <li>Project forecasts and analysis</li>
+        </ul>
+        <a href="#" class="button button2">Start Now</a>
+      </div>
+      <div class="packages">
+        <h1>Premium</h1>
+        <h2 class="text1">$29.99</h2>
+        <h2 class="text2">$359.99</h2>
+        <ul class="list">
+          <li class="first">Professional +</li>
+          <li>Set required fields for time entries</li>
+          <li>Instagram Ads</li>
+          <li>Facebook Ads</li>
+        </ul>
+        <a href="#" class="button button3">Start Now</a>
+      </div>
+    </div>
+<script>
+function check() {
+  var checkBox = document.getElementById("checbox");
+  var text1 = document.getElementsByClassName("text1");
+  var text2 = document.getElementsByClassName("text2");
+ 
+  for (var i = 0; i < text1.length; i++) {
+    if (checkBox.checked == true) {
+      text1[i].style.display = "block";
+      text2[i].style.display = "none";
+    } else if (checkBox.checked == false) {
+      text1[i].style.display = "none";
+      text2[i].style.display = "block";
+    }
+  }
+}
+check();                               
+</script>
+</Body>  
+</Html>  
